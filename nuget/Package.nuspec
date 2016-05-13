@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <metadata xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <id>PhoneyTools</id>
+    <version>1.0.10</version>
+    <authors>Shawn Wildermuth</authors>
+    <owners>Shawn Wildermuth</owners>
+    <projectUrl>http://phoney.codeplex.com</projectUrl>
+    <iconUrl>http://wildermuth.com/images/phoneyicon.png</iconUrl>
+    <licenseUrl>http://phoney.codeplex.com/license</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <title>Phoney Tools for Windows Phone 7</title>
+    <description>Phoney Tools for Windows Phone 7 Development.  Includes Converters, Controls, Static Typing for Phone Resources and XNA Helper classes.</description>
+    <tags>WP7 Silverlight Phone</tags>
+    <dependencies>
+      <dependency id="SilverlightToolkitWP" version="4.2011.2.1" />
+    </dependencies> 
+  </metadata>
+</package>

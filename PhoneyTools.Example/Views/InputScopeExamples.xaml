@@ -1,0 +1,69 @@
+﻿<UserControl xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+             x:Class="PhoneyTools.Example.Views.InputScopeExamples"
+             xmlns:pt="clr-namespace:AgiliTrain.PhoneyTools;assembly=AgiliTrain.PhoneyTools"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+             xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             FontFamily="{StaticResource PhoneFontFamilyNormal}"
+             FontSize="{StaticResource PhoneFontSizeNormal}"
+             Foreground="{StaticResource PhoneForegroundBrush}"
+             mc:Ignorable="d"
+             d:DesignHeight="768"
+             d:DesignWidth="480"
+             shell:SystemTray.IsVisible="True">
+  <!--LayoutRoot is the root grid where all page content is placed-->
+  <Grid x:Name="LayoutRoot"
+        Background="Transparent">
+    <ScrollViewer Grid.Row="1"
+                  Margin="12,0,12,0">
+      <StackPanel x:Name="ContentPanel">
+        <TextBlock>InputPanel Requirements Set in XAML</TextBlock>
+        <TextBox>
+          <pt:InputPanelProvider.Requirements>
+            <pt:InputPanelRequirements AutoCorrect="true"
+                                       KeyboardType="AlphanumericInitialCap"
+                                       SpecialKeys="Chat"
+                                       />
+          </pt:InputPanelProvider.Requirements>
+        </TextBox>
+        <TextBlock>Searching Manually</TextBlock>
+        <CheckBox x:Name="autoCorrectCheck"
+                  Content="Use AutoCorrect?"
+                  Checked="autoCorrectCheck_Checked" />
+        <toolkit:ListPicker x:Name="keyboardType"
+                            SelectionChanged="keyboardType_SelectionChanged" />
+        <toolkit:ListPicker x:Name="specialKeys"
+                            SelectionChanged="specialKeys_SelectionChanged" />
+        <toolkit:ListPicker x:Name="enterKey"
+                            SelectionChanged="enterKey_SelectionChanged" />
+        <Grid>
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+          </Grid.ColumnDefinitions>
+          <Button Content="Set via Data"
+                  x:Name="setInputScope"
+                  Click="setInputScope_Click" />
+          <Button Content="Clear Data"
+                  Grid.Column="1"
+                  x:Name="clearInputData"
+                  Click="clearInputData_Click" />
+        </Grid>
+        <Grid>
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition Width="Auto" />
+          </Grid.ColumnDefinitions>
+          <TextBox x:Name="testBox" />
+          <Button Content="Close"
+                  Grid.Column="1"
+                  x:Name="closeButton"
+                  Click="closeButton_Click" />
+        </Grid>
+      </StackPanel>
+    </ScrollViewer>
+  </Grid>
+</UserControl>

@@ -1,0 +1,40 @@
+﻿<UserControl x:Class="PhoneyTools.Example.Views.InstaPaperExamples"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+             xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             FontFamily="{StaticResource PhoneFontFamilyNormal}"
+             FontSize="{StaticResource PhoneFontSizeNormal}"
+             Foreground="{StaticResource PhoneForegroundBrush}"
+             mc:Ignorable="d"
+             d:DesignHeight="768"
+             d:DesignWidth="480"
+             shell:SystemTray.IsVisible="True">
+  <!--LayoutRoot is the root grid where all page content is placed-->
+  <Grid x:Name="LayoutRoot"
+        Background="Transparent">
+    <ScrollViewer Grid.Row="1"
+                  Margin="12,0,12,0">
+      <StackPanel x:Name="ContentPanel">
+        <TextBlock>InstaPaper Username</TextBlock>
+        <TextBox x:Name="userNameBox"
+                 Text="" />
+        <TextBlock>InstaPaper Password</TextBlock>
+        <PasswordBox x:Name="pwdBox" />
+        <TextBlock>Enter Url</TextBlock>
+        <TextBox x:Name="urlBox"
+                 Text="http://phoney.codeplex.com" />
+        <TextBlock>Name to Save</TextBlock>
+        <TextBox x:Name="titleBox"
+                 Text="PhoneyTools" />
+        <Button Content="Click to Add to InstaPaper"
+                x:Name="addButton"
+                Click="addButton_Click" />
+        <TextBlock Text="Result:" />
+        <TextBlock x:Name="resultText" />
+      </StackPanel>
+    </ScrollViewer>
+  </Grid>
+</UserControl>

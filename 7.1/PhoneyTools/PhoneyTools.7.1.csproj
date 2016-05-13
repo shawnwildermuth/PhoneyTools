@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{499CE39D-5CAD-4170-B3D5-2F4F619108B1}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AgiliTrain.PhoneyTools</RootNamespace>
+    <AssemblyName>AgiliTrain.PhoneyTools</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <TargetFrameworkProfile>WindowsPhone71</TargetFrameworkProfile>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <SilverlightApplication>false</SilverlightApplication>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>TRACE;DEBUG;SILVERLIGHT;WINDOWS_PHONE;MANGO</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE;MANGO</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Phone" />
+    <Reference Include="Microsoft.Phone.Controls.Toolkit">
+      <HintPath>..\..\packages\SilverlightToolkitWP.4.2011.2.1\lib\sl4\Microsoft.Phone.Controls.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework" />
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Net" />
+    <Reference Include="mscorlib.extensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\PhoneyTools\Controls\ClearableTextBox.cs">
+      <Link>Controls\ClearableTextBox.cs</Link>
+    </Compile>
+    <Compile Include="..\..\PhoneyTools\Controls\SelectSwitch.cs">
+      <Link>Controls\SelectSwitch.cs</Link>
+    </Compile>
+    <Compile Include="..\..\PhoneyTools\Controls\SimpleLongListSelector.cs">
+      <Link>Controls\SimpleLongListSelector.cs</Link>
+    </Compile>
+    <Compile Include="..\..\PhoneyTools\Converters\DateTimeConverter.cs">
+      <Link>Converters\DateTimeConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\PhoneyTools\Converters\MoneyConverter.cs">
+      <Link>Converters\MoneyConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\PhoneyTools\Converters\NullVisibilityConverter.cs">
+      <Link>Converters\NullVisibilityConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\PhoneyTools\Converters\StringCaseConverter.cs">
+      <Link>Converters\StringCaseConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\PhoneyTools\Converters\StringFormatConverter.cs">
+      <Link>Converters\StringFormatConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\PhoneyTools\Converters\UnHtmlConverter.cs">
+      <Link>Converters\UnHtmlConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\PhoneyTools\Converters\VisibilityConverter.cs">
+      <Link>Converters\VisibilityConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\PhoneyTools\EnumHelper.cs">
+      <Link>EnumHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\PhoneyTools\FadingMessage.cs">
+      <Link>FadingMessage.cs</Link>
+    </Compile>
+    <Compile Include="..\..\PhoneyTools\InputPanelEnterKey.cs">
+      <Link>InputPanelEnterKey.cs</Link>
+    </Compile>
+    <Compile Include="..\..\PhoneyTools\InputPanelKeyboard.cs">
+      <Link>InputPanelKeyboard.cs</Link>
+    </Compile>
+    <Compile Include="..\..\PhoneyTools\InputPanelProvider.cs">
+      <Link>InputPanelProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\..\PhoneyTools\InputPanelRequirements.cs">
+      <Link>InputPanelRequirements.cs</Link>
+    </Compile>
+    <Compile Include="..\..\PhoneyTools\InputPanelSpecialKeys.cs">
+      <Link>InputPanelSpecialKeys.cs</Link>
+    </Compile>
+    <Compile Include="..\..\PhoneyTools\InputScopeHelper.cs">
+      <Link>InputScopeHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\PhoneyTools\Media\GameTimer.cs">
+      <Link>Media\GameTimer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\PhoneyTools\Media\SoundEffectPlayer.cs">
+      <Link>Media\SoundEffectPlayer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\PhoneyTools\ObservableObject.cs">
+      <Link>ObservableObject.cs</Link>
+    </Compile>
+    <Compile Include="..\..\PhoneyTools\ObstructionDetector.cs">
+      <Link>ObstructionDetector.cs</Link>
+    </Compile>
+    <Compile Include="..\..\PhoneyTools\PhoneLogger.cs">
+      <Link>PhoneLogger.cs</Link>
+    </Compile>
+    <Compile Include="..\..\PhoneyTools\Properties\AssemblyInfo.cs">
+      <Link>Properties\AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\..\PhoneyTools\Properties\SharedAssemblyInfo.cs">
+      <Link>Properties\SharedAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\..\PhoneyTools\Security\Cryptography\MD5Managed.cs">
+      <Link>Security\Cryptography\MD5Managed.cs</Link>
+    </Compile>
+    <Compile Include="..\..\PhoneyTools\StronglyTypedGroup.cs">
+      <Link>StronglyTypedGroup.cs</Link>
+    </Compile>
+    <Compile Include="..\..\PhoneyTools\SystemResources\PhoneBrushes.cs">
+      <Link>SystemResources\PhoneBrushes.cs</Link>
+    </Compile>
+    <Compile Include="..\..\PhoneyTools\SystemResources\PhoneColors.cs">
+      <Link>SystemResources\PhoneColors.cs</Link>
+    </Compile>
+    <Compile Include="..\..\PhoneyTools\SystemResources\PhoneFontFamilies.cs">
+      <Link>SystemResources\PhoneFontFamilies.cs</Link>
+    </Compile>
+    <Compile Include="..\..\PhoneyTools\SystemResources\PhoneFontSizes.cs">
+      <Link>SystemResources\PhoneFontSizes.cs</Link>
+    </Compile>
+    <Compile Include="..\..\PhoneyTools\SystemResources\PhoneTextStyles.cs">
+      <Link>SystemResources\PhoneTextStyles.cs</Link>
+    </Compile>
+    <Compile Include="..\..\PhoneyTools\SystemResources\PhoneThemes.cs">
+      <Link>SystemResources\PhoneThemes.cs</Link>
+    </Compile>
+    <Compile Include="..\..\PhoneyTools\SystemResources\PhoneThicknesses.cs">
+      <Link>SystemResources\PhoneThicknesses.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Toolkit.Content\ApplicationBar.Check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Toolkit.Content\ApplicationBar.Cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="..\..\PhoneyTools\Themes\Generic.xaml">
+      <Link>Themes\Generic.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\..\PhoneyTools\Xaml\SimpleLongListSelector.xaml">
+      <Link>Xaml\SimpleLongListSelector.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <ProjectExtensions />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

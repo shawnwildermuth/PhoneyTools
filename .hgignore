@@ -1,0 +1,62 @@
+syntax: glob
+#-- Files
+*.bak.*
+*.bak
+thumbs.db
+*.msi
+*.log
+*.sqlite
+
+#-- Directories
+App_Data/*
+bin/
+obj/
+_ReSharper.*/
+tmp/
+.svn/
+
+#-- Microsoft Visual Studio specific
+*.suo
+*.user
+*.FileListAbsolute.txt
+*\bin\*
+*\obj\*
+*.ncb
+*.nlb
+*.aps
+*.clw
+*.pdb
+*.obj
+*.exe
+*.pch
+*.vspscc
+*_i.c
+*_p.c
+*.tlb
+*.tlh
+*.bak
+*.cache
+*.Cache
+*.ilk
+*.log
+*.lib
+*.sbr
+*.scc
+*.sig
+_ReSharper*\*
+
+#-- MonoDevelop specific
+*.pidb
+*.userprefs
+*.usertasks
+
+syntax: regexp
+#-- Directories
+# ignore all bin folders except the one in project root directory
+#(?<!^)bin/
+
+#-- Tests and other files
+TestResults\*
+glob:desktop.ini
+glob:*.xap
+glob:*.dll

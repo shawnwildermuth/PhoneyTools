@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ABEFDCEB-729A-46F1-B826-1D7020A38560}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PhoneyTools.Example</RootNamespace>
+    <AssemblyName>PhoneyTools.Example</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <TargetFrameworkProfile>WindowsPhone71</TargetFrameworkProfile>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>PhoneyTools.Example.xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>PhoneyTools.Example.App</SilverlightAppEntry>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Devices.Sensors" />
+    <Reference Include="Microsoft.Phone" />
+    <Reference Include="Microsoft.Phone.Controls, Version=7.0.0.0, Culture=neutral, PublicKeyToken=24eec0d8c86cda1e, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Phone.Controls.Toolkit, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b772ad94eb9ca604, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\SilverlightToolkitWP.4.2011.8.17\lib\sl4-windowsphone71\Microsoft.Phone.Controls.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Phone.Interop" />
+    <Reference Include="Microsoft.Xna.Framework" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Device" />
+    <Reference Include="System.Observable" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Xml" />
+    <Reference Include="mscorlib.extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml.Serialization" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Properties\AppManifest.xml" />
+    <None Include="Properties\WMAppManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\PhoneyTools.Example\App.xaml.cs">
+      <Link>App.xaml.cs</Link>
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\PhoneyTools.Example\Games.cs">
+      <Link>Games.cs</Link>
+    </Compile>
+    <Compile Include="..\..\PhoneyTools.Example\MainPage.xaml.cs">
+      <Link>MainPage.xaml.cs</Link>
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\PhoneyTools.Example\Properties\AssemblyInfo.cs">
+      <Link>Properties\AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\..\PhoneyTools.Example\Views\ControlExamples.xaml.cs">
+      <Link>Views\ControlExamples.xaml.cs</Link>
+      <DependentUpon>ControlExamples.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\PhoneyTools.Example\Views\ConvertersExamples.xaml.cs">
+      <Link>Views\ConvertersExamples.xaml.cs</Link>
+      <DependentUpon>ConvertersExamples.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\PhoneyTools.Example\Views\DummyData.cs">
+      <Link>Views\DummyData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\PhoneyTools.Example\Views\FadingMessageExamples.xaml.cs">
+      <Link>Views\FadingMessageExamples.xaml.cs</Link>
+      <DependentUpon>FadingMessageExamples.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\PhoneyTools.Example\Views\InputScopeExamples.xaml.cs">
+      <Link>Views\InputScopeExamples.xaml.cs</Link>
+      <DependentUpon>InputScopeExamples.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\PhoneyTools.Example\Views\InstaPaperExamples.xaml.cs">
+      <Link>Views\InstaPaperExamples.xaml.cs</Link>
+      <DependentUpon>InstaPaperExamples.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\PhoneyTools.Example\Views\LoggerExample.xaml.cs">
+      <Link>Views\LoggerExample.xaml.cs</Link>
+      <DependentUpon>LoggerExample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\PhoneyTools.Example\Views\MediaExamples.xaml.cs">
+      <Link>Views\MediaExamples.xaml.cs</Link>
+      <DependentUpon>MediaExamples.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\PhoneyTools.Example\Views\NetworkExamples.xaml.cs">
+      <Link>Views\NetworkExamples.xaml.cs</Link>
+      <DependentUpon>NetworkExamples.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\PhoneyTools.Example\Views\SimpleLongListSelectorExample.xaml.cs">
+      <Link>Views\SimpleLongListSelectorExample.xaml.cs</Link>
+      <DependentUpon>SimpleLongListSelectorExample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\PhoneyTools.Example\Views\SocialExamples.xaml.cs">
+      <Link>Views\SocialExamples.xaml.cs</Link>
+      <DependentUpon>SocialExamples.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\PhoneyTools\Properties\SharedAssemblyInfo.cs">
+      <Link>Properties\SharedAssemblyInfo.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\..\PhoneyTools.Example\alert.wav">
+      <Link>alert.wav</Link>
+    </Content>
+    <Content Include="ApplicationIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Background.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SplashScreenImage.jpg" />
+    <Content Include="Toolkit.Content\ApplicationBar.Cancel.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Check.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Delete.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Select.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="..\..\PhoneyTools.Example\App.xaml">
+      <Link>App.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\..\PhoneyTools.Example\MainPage.xaml">
+      <Link>MainPage.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\..\PhoneyTools.Example\Views\ControlExamples.xaml">
+      <Link>Views\ControlExamples.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\..\PhoneyTools.Example\Views\ConvertersExamples.xaml">
+      <Link>Views\ConvertersExamples.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\..\PhoneyTools.Example\Views\FadingMessageExamples.xaml">
+      <Link>Views\FadingMessageExamples.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\..\PhoneyTools.Example\Views\InputScopeExamples.xaml">
+      <Link>Views\InputScopeExamples.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\..\PhoneyTools.Example\Views\InstaPaperExamples.xaml">
+      <Link>Views\InstaPaperExamples.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\..\PhoneyTools.Example\Views\LoggerExample.xaml">
+      <Link>Views\LoggerExample.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\..\PhoneyTools.Example\Views\MediaExamples.xaml">
+      <Link>Views\MediaExamples.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\..\PhoneyTools.Example\Views\NetworkExamples.xaml">
+      <Link>Views\NetworkExamples.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\..\PhoneyTools.Example\Views\SimpleLongListSelectorExample.xaml">
+      <Link>Views\SimpleLongListSelectorExample.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\..\PhoneyTools.Example\Views\SocialExamples.xaml">
+      <Link>Views\SocialExamples.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PhoneyTools.Microphone\PhoneyTools.Microphone.7.1.csproj">
+      <Project>{02B1A518-A038-4BA9-AEE8-EEA0B53DFF25}</Project>
+      <Name>PhoneyTools.Microphone.7.1</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PhoneyTools.Net\PhoneyTools.Net.7.1.csproj">
+      <Project>{2BC7A633-D5D3-4271-887D-AD0DC0A29E15}</Project>
+      <Name>PhoneyTools.Net.7.1</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PhoneyTools\PhoneyTools.7.1.csproj">
+      <Project>{499CE39D-5CAD-4170-B3D5-2F4F619108B1}</Project>
+      <Name>PhoneyTools.7.1</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions />
+</Project>
